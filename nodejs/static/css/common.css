@@ -1,0 +1,87 @@
+.collection-list {
+    padding: 10px 16px;
+    width: 600px !important;
+}
+.collection-list h3 {
+    font-size: 22px;
+}
+.collection-list .add-item {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    float: right;
+    background: #e09850;
+    border-radius: 100%;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.collection-list .form-group {
+    margin:0;
+}
+.collection-list input {
+    height:42px;
+}
+.high-light {
+    color:red;
+    font-size: 16px;
+}
+.search-detail {
+    overflow: hidden;
+}
+.search-detail img {
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+.glyphicon-heart {
+    float: left;
+    display: inline-block;
+    margin-top: -33px;
+    margin-left: 82px;
+    font-size: 19px;
+    color: #a9bda3;
+}
+.select-group-list {
+    position: absolute;
+    left: 126px;
+    background: #fff;
+    border: solid 1px #999;
+    border-radius: 4px;
+    margin-top: -31px;
+    list-style:none;
+    padding: 0;
+}
+.select-group-list li {
+    width: 140px;
+    padding: 4px 10px;
+    text-align: center;
+}
+.select-group-list li:hover {
+    background: #c8d4ca;
+}
+.delete-item {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    float: right;
+    background: #e09850;
+    border-radius: 100%;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.delete-sub-item {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    float: right;
+    background: #e09850;
+    border-radius: 100%;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
