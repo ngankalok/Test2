@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="image/Tesla-Motors-logo.png" />
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Tesla Car</title>
+    <style type="text/css">
+        #search {
+            width: 200px;
+            padding: 7px;
+            border: 1px solid #607d8b;
+        }
+
+        #submit {
+            padding: 7px;
+            background: #607d8b;
+            border: 1px solid #607d8b;
+            color: white;
+            margin-left: -5px;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background: #333;
+            transition: all 0.40s;
+        }
+
+        .container1 {
+            padding: 16px;
+        }
+    </style>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body background="image/bg.jpg">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+        </div>
+    </div>
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <img src="image/Tesla-Motors-logo.png" href="http://www.tesla.com.hk" alt="Tesla" width="104" height="142">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+    </div>
+    <h2 style="text-align:center;color:white;">Wan Chai-QRE Plaza</h2>
+    <p><p>
+      <h3 style="text-align:center;color:white;">Sale's Store</h3>
+      <p><p><p style="text-align:center;color:white;" >202 Queens Road East<p style="text-align:center;color:white;" style="color:white;">Wan Chai<p style="text-align:center;color:white;" style="color:white;">Hong Kong<p>
+
+      <div id="map" style="width:70%;height:500px"></div>
+
+      <script>
+      function myMap() {
+        var mapCanvas = document.getElementById("map");
+        var myCenter = new google.maps.LatLng(22.2747114, 114.17200909999997);
+        var mapOptions = {center: myCenter, zoom: 20};
+        var map = new google.maps.Map(mapCanvas,mapOptions);
+        var marker = new google.maps.Marker({
+          position: myCenter,
+          animation: google.maps.Animation.BOUNCE
+        });
+        marker.setMap(map);
+      }
+      </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFn17fn0dMFERNyqwV6Rr4-p5wYE3KF0&callback=myMap"></script>
+
+    <footer>
+        <p>Posted by: Galaxy Ngan</p>
+        <p>Copyright by Ngan Ka Lok&copy;</p>
+        <p>Contact information: <a href="mailto:galaxyngan@yahoo.com.hk">galaxyngan@yahoo.com.hk</a></p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
+</body>
+
+</html>

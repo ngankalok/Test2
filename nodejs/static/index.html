@@ -1,150 +1,125 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="icon" href="image/Tesla-Motors-logo.png"/>
+    <link rel="icon" href="image/Tesla-Motors-logo.png" />
     <link rel="stylesheet" type="text/css" href="libs/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
-<style>
-#myDIV {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: lightblue;
-  margin-top:20px;
-}
-</style>
-<title>Tesla Car</title>
-<style type="text/css">
-#search{
-  width:200px;
-  padding: 7px;
-  border :1px solid #607d8b;
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Tesla Car</title>
+    <style type="text/css">
+        #search {
+            width: 200px;
+            padding: 7px;
+            border: 1px solid #607d8b;
+        }
 
-}
-#submit{
-  padding: 7px;
-  background :#607d8b;
-  border :1px solid #607d8b;
-  color: white;
-  margin-left:-5px;
-  cursor: pointer;
-}
-#submit:hover{
-  background: #333;
-  transition: all 0.40s;
-}
-    .container1 {
-        padding: 16px;
-    }
-    #map {
-       height: 400px;
-       width: 100%;
-      }
-</style>
-<link rel="stylesheet" href="body.css">
-<link rel="stylesheet" href="signup.css">
-<link rel="stylesheet" href="login.css">
+        #submit {
+            padding: 7px;
+            background: #607d8b;
+            border: 1px solid #607d8b;
+            color: white;
+            margin-left: -5px;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background: #333;
+            transition: all 0.40s;
+        }
+
+        .container1 {
+            padding: 16px;
+        }
+    </style>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body background="image/bg.jpg">
-  <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-  <button onclick="myFunction()">Click Me</button>
-<div id="myDIV">
-  This is my DIV element.
-</div>
-<div id="myDIV2">
-  This is  not my DIV element.
-</div>
-  </div>
-</div>
-<style>
-img {
-    display: block;
-    margin: 0 auto;
-}
-</style>
-<img src="image/Tesla-Motors-logo.png" href="http://www.tesla.com.hk" alt="Tesla" width="104" height="142" >
-  <div class="topnav" id="myTopnav">
-    <a href="#sign-up" onclick="document.getElementById('id01').style.display='block'">Sign up</a>
-    <a href="#sign-in" onclick="document.getElementById('id02').style.display='block'">Sign in</a>
-    <a href="#about" onclick="document.getElementById('id03').style.display='block'">About</a>
-    <a href="#model-s" onclick="document.getElementById('id04').style.display='block'">Model S</a>
-    <a href="#model-x" onclick="document.getElementById('id05').style.display='block'">Model X</a>
-    <a href="#model-3" onclick="document.getElementById('id06').style.display='block'">Model 3</a>
-    <a href="#stores" onclick="document.getElementById('id07').style.display='block'">Store</a>
-    <a href="#search" onclick="document.getElementById('id08').style.display='block'">Search</a>
-    <a href="#collection" class="collection-btn">Collection</a>
-  </div>
-
-  <div id="id09" class="modal">
-      <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <div class="collection-list modal-content animate">
-          <h3>Group List<span class="add-item">+</span></h3>
-          <div class="group-list"></div>
-          <div class="sub-group-list"></div>
-      </div>
-  </div>
-  <div id="id08" class="modal">
-      <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <div class="collection-list modal-content animate">
-          <div class="form-group">
-              <input type="email" class="form-control" id="input-search" placeholder="Search">
-          </div>
-          <div class="search-results-list">
-
-          </div>
-          <div class="search-detail"></div>
-      </div>
-  </div>
-
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  <form class="modal-content animate" id="register" action="/action_page.php">
-    <div class="container1">
-      <label><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" class="email" name="email" required>
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" class="password" name="psw" required>
-
-      <label><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" class="again-password" name="psw-repeat" required>
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="button" class="signupbtn">Sign Up</button>
-      </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+        </div>
     </div>
-  </form>
-</div>
-<div id="id02" class="modal">
-
-  <form class="modal-content animate" id="login-form" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <img src="image/Tesla-Motors-logo.png" href="http://www.tesla.com.hk" alt="Tesla" width="104" height="142">
+    <div class="topnav" id="myTopnav" >
+        <a href="#sign-up" onclick="document.getElementById('id01').style.display='block'">Sign up</a>
+        <a href="#sign-in" onclick="document.getElementById('id02').style.display='block'">Sign in</a>
+        <a href="#about" onclick="document.getElementById('id03').style.display='block'">About</a>
+        <a href="#model-s" onclick="document.getElementById('id04').style.display='block'">Model S</a>
+        <a href="#model-x" onclick="document.getElementById('id05').style.display='block'">Model X</a>
+        <a href="#model-3" onclick="document.getElementById('id06').style.display='block'">Model 3</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="store.html">Store</a>
+        <a href="#search" onclick="document.getElementById('id08').style.display='block'">Search</a>
+        <a href="#collection" class="collection-btn">Favourite List</a>
     </div>
 
-    <div class="container1">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" class="email" name="uname" required>
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" class="password" name="psw" required>
 
-      <button type="button" class="submit">Login</button>
-      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-      <input type="checkbox" checked="checked"> Remember me
-      <span class="psw">Forgot <a href="#">password?</a></span>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" id="register" action="/action_page.php">
+            <div class="container1">
+                <label><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" class="email" name="email" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" class="password" name="psw" required>
+
+                <label><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" class="again-password" name="psw-repeat" required>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="button" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
     </div>
-  </form>
-</div>
-<div id="id03" class="modal">
-    <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <form class="modal-content animate" action="/action_page.php">
-        <div class="container1">
-            <label>
+    <div id="id02" class="modal">
+
+        <form class="modal-content animate" id="login-form" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container1">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" class="email" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" class="password" name="psw" required>
+
+                <button type="button" class="submit">Login</button>
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <input type="checkbox" checked="checked"> Remember me
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+    <div id="id03" class="modal">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+                <label>
           <p>Tesla was founded in 2003 by a group of engineers in Silicon Valley who wanted to prove that electric cars could be better than gasoline-powered cars. With instant torque, incredible power, and zero emissions, Tesla's products would be cars without compromise. Each new generation would be increasingly affordable, helping the company work towards its mission: to accelerate the world's transition to sustainable energy. </p>
           <p>Tesla's engineers first designed a powertrain for a sports car built around an AC induction motor, patented in 1888 by Nikola Tesla, the inventor who inspired the company's name. The resulting Tesla Roadster was launched in 2008. Accelerating from 0 to 60 mph in 3.7 seconds and achieving a range of 245 miles per charge of its lithium ion battery, the Roadster set a new standard for electric mobility. Tesla would sell more than 2,400 Roadsters, now on the road in more than 30 countries. </p>
           <p>In 2012, Tesla launched Model S, the world's first premium electric sedan. Built from the ground up to be 100 percent electric, Model S has redefined the very concept of a four-door car. With room for seven passengers and more than 64 cubic feet of storage, Model S provides the comfort and utility of a family sedan while achieving the acceleration of a sports car: 0 to 60 mph in about five seconds. Its flat battery pack is integrated into the chassis and sits below the occupant cabin, lending the car a low center of gravity that enables outstanding road holding and handling while driving 265 miles per charge. Model S was named Motor Trend's 2013 Car of the Year and achieved a 5-star safety rating from the U.S. National Highway Traffic Safety Administration. </p>
@@ -153,15 +128,16 @@ img {
           <p>Tesla's vehicles are produced at its factory in Fremont, California, previously home to New United Motor Manufacturing Inc., a joint venture between Toyota and General Motors. The Tesla Factory has returned thousands of jobs to the area and is capable of producing 2,000 cars a week. </p>
           <p>The company is expanding its manufacturing footprint into other areas, including in Tilburg, the Netherlands, where it has an assembly facility, and Lathrop, California, where it has a specialized production plant. To reduce the costs of lithium ion battery packs, Tesla and key strategic partners including Panasonic have begun construction of a gigafactory in Nevada that will facilitate the production of a mass-market affordable vehicle, Model 3. By 2018, the gigafactory will produce more lithium ion cells than all of the world's combined output in 2013. The gigafactory will also produce battery packs intended for use in stationary storage, helping to improve robustness of the electrical grid, reduce energy costs for businesses and residences, and provide a backup supply of power. </p>
           <p>Tesla is not just an automaker, but also a technology and design company with a focus on energy innovation. </p>
+          <img src="image/01.png"/>
         </label>
-        </div>
-    </form>
-</div>
-<div id="id04" class="modal">
-    <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <form class="modal-content animate" action="/action_page.php">
-        <div class="container1">
-            <label>
+            </div>
+        </form>
+    </div>
+    <div id="id04" class="modal">
+        <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+                <label>
               <h1 class="section-title section-title--hed">Performance and safety refined</h1>
               <p class="section-description section-description--dek">Model S is designed from the ground up to be the safest, most exhilarating saloon on the road. With unparalleled performance delivered through Tesla's unique, all-electric powertrain, Model S accelerates from 0 to 60 mph in as little as 2.5 seconds. Model S comes with Autopilot capabilities designed to make your highway driving not only safer, but stress free.</p>
               <h4 class="section-sub-title">Adaptive Lighting</h4>
@@ -175,16 +151,18 @@ img {
               <p class="section-description section-description--dek">Model S is a driver's car. The cabin combines meticulous noise engineering with Tesla's uniquely quiet powertrain to obtain the sound dynamics of a recording studio. The gem of the interior is the 17 inch touchscreen, which is angled toward the driver and includes both day and night modes for better visibility without distraction. It puts rich content at your fingertips and provides mobile connectivity so you can easily find your destination, favourite song, or a new restaurant.</p>
               <p class="section-description">Model S is designed from the ground up to be the safest car on the road. Much of its safety is owed to the unique electric drivetrain that sits beneath the car's aluminium occupant cell in its own subframe. This unique positioning both lowers the car's centre of gravity, which improves handling and minimises rollover risk, and replaces the heavy engine block with impact absorbing boron steel rails.</p>
               <p class="section-description">Side impacts are met by aluminum pillars reinforced with steel rails to reduce intrusion, protecting occupants and the battery pack while improving roof stiffness. In the event of an accident, six airbags protect front and rear occupants, and the high voltage power source is automatically disconnected.</p>
+<p>
+  <img src="image/models.png" >
             </label>
-        </div>
-    </form>
-</div>
+            </div>
+        </form>
+    </div>
 
-<div id="id05" class="modal">
-    <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <form class="modal-content animate" action="/action_page.php">
-        <div class="container1">
-            <label>
+    <div id="id05" class="modal">
+        <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+                <label>
               <h1 class="section-title section-title--hed">Meet Model X</h1>
       <p class="section-description">
                               Model X is the safest, fastest and most capable sport utility vehicle in history. With all-wheel drive and a 100 kWh battery providing 351 miles of range, Model X has ample seating for seven adults and all of their gear. And it's ludicrously fast, accelerating from zero to 60 miles per hour in as quick as 2.9 seconds. <br class="hide-on-mobile" />Model X is the SUV uncompromised.
@@ -204,55 +182,96 @@ img {
         <p class="section-description">With only a foot of clearance on either side, Falcon Wing doors articulate smoothly up and out of the way, allowing passengers to enter from both front and rear directions. The side and overhead opening is so large that parents can buckle children in without ducking or straining and without bumping their child's head on the roof.</p>
         <h2 class="section-title section-title--hed">Aerodynamic</h2>
         <p class="section-description">Model X is able to achieve 289 miles of range in part because it is the most aerodynamic SUV in production. At 0.24, Model X's drag coefficient is 20% lower than the next best SUV. In addition, an active spoiler deploys from the rear liftgate to optimize highway efficiency and stability.</p>
+        <p>
+          <img src="image/modelx.png">
               </label>
-        </div>
-    </form>
-</div>
+            </div>
+        </form>
+    </div>
 
-<div id="id06" class="modal">
-    <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <form class="modal-content animate" action="/action_page.php">
-        <div class="container1">
-            <label>
+    <div id="id06" class="modal">
+        <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+                <label>
                 <h1 class="section-title">Accelerating Sustainable Transport</h1>
           <p class="section-description">
             Model 3 combines real world range, performance, safety and spaciousness into a premium saloon that only Tesla can build. Our most affordable car yet, Model 3 achieves 215 miles of range per charge while starting at only 35,000 USD before incentives. Model 3 is designed to attain the highest safety ratings in every category.</p>
             <h1 class="section-title">35,000 USD</h1>
     <p class="section-description" style="max-width:initial;">Starting price in USD. Local pricing will be announced in 2017.<br />Production begins mid 2017.<br />Delivery estimate for new reservations is mid 2018 or later.</p>
-
+<p>
+  <img src="image/model3.jpg" width="700px">
                 </label>
+            </div>
+        </form>
+    </div>
+    <div id="id07" class="modal">
+        <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+                <label>
+            <h2>Wan Chai-QRE Plaza</h2>
+            <p><p><h3>Sale's Store</h3><p><p><p>202 Queens Road East<p>Wan Chai<p>Hong Kong<p>
+</label>
+            </div>
+    </div>
+    <div id="id08" class="modal">
+        <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="collection-list modal-content animate">
+            <div class="form-group">
+                <input type="email" class="form-control" id="input-search" placeholder="Search">
+            </div>
+            <div class="search-results-list">
+
+            </div>
+            <div class="search-detail"></div>
         </div>
-    </form>
-</div>
-<div id="id07" class="modal">
-</div>
-<!--modal html-->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="z-index: 10000;">
-  <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width: 30px;margin-right: -15px;margin-top: 5px;">
+    </div>
+    <div id="id09" class="modal">
+        <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="collection-list modal-content animate">
+            <h3>Group List<span class="add-item">+</span></h3>
+            <div class="group-list"></div>
+            <div class="sub-group-list"></div>
+        </div>
+    </div>
+    <!--modal html-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" style="z-index: 10000;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width: 30px;margin-right: -15px;margin-top: 5px;">
                   <span aria-hidden="true">&times;</span>
               </button>
-              <h4 class="modal-title">Hint</h4>
-          </div>
-          <div class="modal-body">
-              <p></p>
-              <div class="form-group">
-                  <input type="email" class="form-control" id="input-code" placeholder="your code">
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button style="float: right;width:45%;" type="button" class="btn btn-warning btn-reset" data-dismiss="modal">Cancel</button>
-              <button style="float: right;width:45%;margin-right: 8%;" type="button" class="btn btn-warning btn-sure">Sure</button>
-          </div>
-      </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="libs/jquery.min.js"></script>
-<script type="text/javascript" src="libs/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/request.js"></script>
+                    <h4 class="modal-title">Hint</h4>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="input-code" placeholder="your code">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button style="float: right;width:45%;" type="button" class="btn btn-warning btn-reset" data-dismiss="modal">Cancel</button>
+                    <button style="float: right;width:45%;margin-right: 8%;" type="button" class="btn btn-warning btn-sure">Sure</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <p><p>
+    <img src="image/models.png">
+    <footer>
+        <p>Posted by: Galaxy Ngan</p>
+        <p>Copyright by Ngan Ka Lok&copy;</p>
+        <p>Contact information: <a href="mailto:galaxyngan@yahoo.com.hk">galaxyngan@yahoo.com.hk</a></p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
 </body>
+
 </html>

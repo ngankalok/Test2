@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="image/Tesla-Motors-logo.png" />
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <style>
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Tesla Car</title>
+    <style type="text/css">
+        #search {
+            width: 200px;
+            padding: 7px;
+            border: 1px solid #607d8b;
+        }
+
+        #submit {
+            padding: 7px;
+            background: #607d8b;
+            border: 1px solid #607d8b;
+            color: white;
+            margin-left: -5px;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background: #333;
+            transition: all 0.40s;
+        }
+
+        .container1 {
+            padding: 16px;
+        }
+    </style>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body background="image/bg.jpg">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+        </div>
+    </div>
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <img src="image/Tesla-Motors-logo.png" href="http://www.tesla.com.hk" alt="Tesla" width="104" height="142">
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="#model-s" onclick="document.getElementById('id01').style.display='block'">Model S</a>
+        <a href="#model-x" onclick="document.getElementById('id02').style.display='block'">Model X</a>
+        <a href="#model-3" onclick="document.getElementById('id03').style.display='block'">Model 3</a>=
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+                <label>
+                  <h1>Model S Image</h1>
+                  <table style="width:1000px">
+            <tr>
+              <td><img src="image/models/1.jpg" style="width:320px"  ></td>
+              <td><img src="image/models/2.jpg" style="width:320px"  ></td>
+              <td><img src="image/models/3.jpg" style="width:320px"  ></td>
+            </tr>
+              <td><img src="image/models/4.jpeg" style="width:320px"  ></td>
+              <td><img src="image/models/5.jpg" style="width:320px"  ></td>
+              <td><img src="image/models/6.jpeg" style="width:320px"  ></td>
+            </tr>
+            <tr>
+              <td><img src="image/models/7.jpeg" style="width:320px"  ></td>
+              <td><img src="image/models/8.jpeg" style="width:320px"  ></td>
+              <td><img src="image/models/9.jpg" style="width:320px"  ></td>
+            </tr>
+            <tr>
+              <td><img src="image/models/10.jpg" style="width:320px"  ></td>
+              <td><img src="image/models/11.jpg" style="width:320px"  ></td>
+              <td><img src="image/models/12.jpg" style="width:320px"  ></td>
+            </tr>
+          </table>
+        </label>
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+              <h1>Model X Image</h1>
+                <label>
+                  <table style="width:1000px">
+            <tr>
+              <td><img src="image/modelx/1.jpg" style="width:320px"  ></td>
+              <td><img src="image/modelx/2.jpg" style="width:320px"  ></td>
+              <td><img src="image/modelx/3.jpg" style="width:320px"  ></td>
+            </tr>
+              <td><img src="image/modelx/4.jpeg" style="width:320px"  ></td>
+              <td><img src="image/modelx/5.jpg" style="width:320px"  ></td>
+              <td><img src="image/modelx/6.jpg" style="width:320px"  ></td>
+            </tr>
+            <tr>
+              <td><img src="image/modelx/7.jpg" style="width:320px"  ></td>
+              <td><img src="image/modelx/8.jpg" style="width:320px"  ></td>
+              <td><img src="image/modelx/9.jpg" style="width:320px"  ></td>
+            </tr>
+            <tr>
+              <td><img src="image/modelx/10.jpg" style="width:320px"  ></td>
+              <td><img src="image/modelx/11.jpg" style="width:320px"  ></td>
+              <td><img src="image/modelx/12.jpg" style="width:320px"  ></td>
+            </tr>
+          </table>
+        </label>
+            </div>
+        </form>
+    </div>
+    <div id="id03" class="modal">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container1">
+                <label>
+                  <h1>Model 3 Image</h1>
+                  <table style="width:1000px">
+            <tr>
+              <td><img src="image/model3/1.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/2.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/3.jpg" style="width:320px"  ></td>
+            </tr>
+              <td><img src="image/model3/4.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/5.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/6.jpg" style="width:320px"  ></td>
+            </tr>
+            <tr>
+              <td><img src="image/model3/7.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/8.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/9.jpeg" style="width:320px"  ></td>
+            </tr>
+            <tr>
+              <td><img src="image/model3/10.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/11.jpg" style="width:320px"  ></td>
+              <td><img src="image/model3/12.jpg" style="width:320px"  ></td>
+            </tr>
+          </table>
+        </label>
+            </div>
+        </form>
+    </div>
+    <p><p>
+    <img src="image/models.png">
+    <footer>
+        <p>Posted by: Galaxy Ngan</p>
+        <p>Copyright by Ngan Ka Lok&copy;</p>
+        <p>Contact information: <a href="mailto:galaxyngan@yahoo.com.hk">galaxyngan@yahoo.com.hk</a></p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/request.js"></script>
+</body>
+
+</html>
